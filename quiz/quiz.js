@@ -31,6 +31,7 @@ function controlla1() {
     else {
         output.innerHTML = "Scrivi solo 1, 2, 3 o 4!";
     }
+    function verificarisultati();
 }
   function controlla2() {
     let valore = document.getElementById("risposta_2").value;
@@ -63,6 +64,7 @@ function controlla1() {
     else {
         output.innerHTML = "Scrivi solo 1, 2, 3 o 4!";
     }
+    function verificarisultati();
   }
   function controlla3() {
     let valore = document.getElementById("risposta_3").value;
@@ -95,6 +97,7 @@ function controlla1() {
     else {
         output.innerHTML = "Scrivi solo 1, 2, 3 o 4!";
     }
+    function verificarisultati();
   }
   function controlla4() {
     let valore = document.getElementById("risposta_4").value;
@@ -127,16 +130,17 @@ function controlla1() {
     else {
         output.innerHTML = "Scrivi solo 1, 2, 3 o 4!";
     }
+    function verificarisultati();
 }
 function verificarisultati() {
     if(risposte_date==4){
       if(somma>=13){
         window.location.href = "risultato1/index.html";
       }
-      else if(9<=somma<13){
+      else if(somma>=9 && somma<13){
         window.location.href = "risultato2/index.html";
       }
-      else if(5<=somma<9){
+      else if(somma>=5 && somma<9){
         window.location.href = "risultato3/index.html";
       }
       else{
