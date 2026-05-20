@@ -128,17 +128,19 @@ function controlla1() {
         output.innerHTML = "Scrivi solo 1, 2, 3 o 4!";
     }
 }
-if(risposte_date==4){
-  if(somma>=13){
-    window.location.href = "risultato1/index.html";
-  }
-  else if(9<=somma<13){
-    window.location.href = "risultato2/index.html";
-  }
-  else if(5<=somma<9){
-    window.location.href = "risultato3/index.html";
-  }
-  else{
-    window.location.href = "risultato4/index.html";
-  }
+function verificarisultati() {
+    if(risposte_date==4){
+      if(somma>=13){
+        window.location.href = "risultato1/index.html";
+      }
+      else if(9<=somma<13){
+        window.location.href = "risultato2/index.html";
+      }
+      else if(5<=somma<9){
+        window.location.href = "risultato3/index.html";
+      }
+      else{
+        window.location.href = "risultato4/index.html";
+      }
+    }
 }
