@@ -130,15 +130,15 @@ function controlla1() {
 }
 if(risposte_date==4){
   if(somma>=13){
-    window.location.href = "quiz/risultato1/index.html";
+    window.location.href = "risultato1/index.html";
   }
   else if(9<=somma<13){
-    window.location.href = "quiz/risultato2/index.html";
+    window.location.href = "risultato2/index.html";
   }
   else if(5<=somma<9){
-    window.location.href = "quiz/risultato3/index.html";
+    window.location.href = "risultato3/index.html";
   }
   else{
-    window.location.href = "quiz/risultato4/index.html";
+    window.location.href = "risultato4/index.html";
   }
 }
